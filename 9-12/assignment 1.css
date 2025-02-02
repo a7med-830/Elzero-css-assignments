@@ -1,0 +1,43 @@
+.assignment{
+    margin-bottom: 50px;
+}
+
+.shape {
+    display: inline-block;
+    background-color: #eeeeee;
+    padding: 20px;
+    outline: 5px black solid;
+    margin: 5px;
+}
+
+.shape-1 {
+    border: 5px red solid;
+}
+
+.shape-2 {
+    border: 5px solid; 
+    border-color: blue green;
+}
+
+.shape-3 {
+    border: 5px dashed;
+    border-color: red green blue yellow;
+}
+
+.element {
+    margin: 20px;
+    padding: 5px;
+    border-left: 5px solid;
+}
+
+.element-1 {
+    border-color: red;
+}
+
+.element-2 {
+    visibility: hidden;
+}
+
+.element-3 {
+    border-color: green;
+}
