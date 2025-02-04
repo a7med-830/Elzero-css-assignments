@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.assign-1 div {
+    width: 300px;
+    padding: 30px 0;
+    background-color: #EEE;
+    text-align: center;
+    margin: auto;
+}
+
+.assign-1 div:empty {
+    background-color: red;
+}
+
+.assign-2 div {
+    background-color: #EEE;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+.assign-2 div::first-letter {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin-left: -20px;
+}
+
+.assign-3 p {
+    background-color: #EEE;
+    padding: 10px;
+    border-left: 5px solid #e91e63;
+    position: relative;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.assign-3 p::before {
+    content: attr(data-person);
+    position: absolute;
+    left: -90px;
+    top: 0px;
+    background-color: #EEE;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+}
+
+.assign-3 p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: -24px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent #e91e63 transparent transparent;
+}
+
+.assign-4 p {
+    background-color: #EEE;
+    padding: 10px;
+    counter-increment: product-count;
+    position: relative;
+    width: 50%;
+    margin: 10px auto;
+    border-right: 5px #f44336 solid ;
+}
+
+.assign-4 p::before {
+    content: counter(product-count);
+    background-color: #f44336;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    top: 0;
+    left: -39px;
+    font-weight: bold;
+}
+
