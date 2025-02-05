@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.assign-1 div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 50px;
+    float: left;
+    margin: 20px;
+    background-color: #EEE;
+    box-shadow: #e91e63 -5px -5px, #2196f3 5px 5px;
+    counter-increment: circle-count;
+    position: relative;
+}
+
+.assign-1 div::after {
+    content: counter(circle-count);
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    width: 20px;
+    height: 19px;
+    padding-top: 1px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.assign-1 div::before {
+    content: "Element";
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.clear {
+    clear: both;
+}
+
+.assign-2 div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #EEE;
+    border-top-left-radius: 10px 20px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 10px 20px;
+    border-bottom-left-radius: 50px;
+    box-shadow: inset 0px 0px 10px black;
+}
+
+.assign-3 {
+    width: 550px;
+    margin: 20px auto;
+}
+
+.assign-3 .box {
+    background-color: #EEE;
+    display: inline-block;
+    width: calc((100% - 90px)/2);
+    height: 230px;
+    margin: 20px;
+    position: relative;
+}
+
+
+.assign-3 .plan {
+    color: white;
+    background-color: #03a9f4;
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.assign-3 .price {
+    background-color: #DDD;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 150px;
+    font-size: xx-large;
+}
+
+.basic::after {
+    content: "Or";
+    position: absolute;
+    background-color: #03a9f4;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    color: white;
+    top: 48%;
+    left: 103%;
+}
+
+.basic::before {
+    content: "";
+    position: absolute;
+    height: 230px;
+    background-color: #03a9f4;
+    width: 2px;
+    left: 109%;
+}
